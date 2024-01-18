@@ -7,6 +7,19 @@
 </head>
 
 <body>
+    {{#if user}}
+    <div class="flex flex-wrap gap-4 p-2 bg-base-200">
+
+    <div class="flex-1 flex flex-wrap gap-2">
+            <a href="/competitions" class="btn btn-sm  btn-accent">Natjecanja</a>"
+    </div>
+
+        <div class="p-2 bg-base-200 flex justify-end items-baseline gap-2">
+            <a href="/users/signout" class="btn btn-sm btn-accent">{{user.name}}</a>
+            <a href="/users/signout" class="btn btn-sm btn-secondary">Odjava</a>
+        </div>
+    {{/if}}
+
     {{{body}}}
 </body>
 
